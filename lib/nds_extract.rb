@@ -100,6 +100,8 @@ arr = []
 source.size do |i|
   part1 = source[i][:director_name]
   part2 = source[i][:director_name][:title]
+  puts part1
+  puts part2
   arr << part1 + part2
     end
     puts arr
