@@ -94,6 +94,7 @@ total = 0
 ###############################################################################
 
 def movies_with_directors_set(source)
+  pp source
    use = source[:director_name]
    neww = flatten_a_o_a(use)
 source.size do |i|
