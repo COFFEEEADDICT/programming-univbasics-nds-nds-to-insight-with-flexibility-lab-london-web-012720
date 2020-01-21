@@ -95,10 +95,12 @@ total = 0
 
 def movies_with_directors_set(source)
   pp source
-   use = source[:director_name]
-   neww = flatten_a_o_a(use)
+   
+   
 source.size do |i|
-  source[i][:director_name]
+  part1 = source[i][:director_name]
+  part2 = source[i][:director_name][:title]
+  arr << part1 + part2
 end
 end
   # GOAL: For each director, find their :movies Array and stick it in a new Array
