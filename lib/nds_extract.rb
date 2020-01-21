@@ -94,7 +94,7 @@ total = 0
 ###############################################################################
 
 def movies_with_directors_set(source)
-  #pp source
+  pp source
 arr = []
 
 source.size do |i|
