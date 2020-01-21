@@ -94,9 +94,10 @@ total = 0
 ###############################################################################
 
 def movies_with_directors_set(source)
-  pp source
+  #pp source
 arr = []
-
+part1 - ""
+part2 = ""
 source.size do |i|
   part1 = source[i][:director_name]
   part2 = source[i][:director_name][:title]
