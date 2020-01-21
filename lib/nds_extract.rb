@@ -101,7 +101,7 @@ source.size do |i|
   part1 = source[i][:director_name]
   part2 = source[i][:director_name][:title]
   arr << part1 + part2
-end
+    end
 end
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
