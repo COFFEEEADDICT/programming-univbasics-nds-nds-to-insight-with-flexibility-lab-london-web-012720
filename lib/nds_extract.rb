@@ -94,19 +94,16 @@ total = 0
 ###############################################################################
 
 def movies_with_directors_set(source)
-  pp source
-arr = []
-
-source.size do |i|
-  part1 = source[i][:director_name]
-  part2 = source[i][:director_name][:title]
-  puts part1
-  puts part2
-  arr = part1 + part2
+  row = 0
+    ret_array = []
+    while source[row] do 
+      name = source[row][:name]
+      movies = source[row][:movies]
+      ret_array << movies_with_director_key(name, movies)
+      row += 1 
     end
-    puts arr
-    return arr
-end
+    ret_array
+  end	end
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:
