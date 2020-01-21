@@ -16,7 +16,6 @@ def flatten_a_o_a(aoa)
     end
     i += 1
   end
-p result
   result
 end
 ###############################################################################
@@ -42,7 +41,6 @@ i=0
     while i < movies_collection.size do
         part2 = movies_collection[i]
         arr << movie_with_director_name(part1,part2)
-        p arr
         i += 1
     end
     puts arr
