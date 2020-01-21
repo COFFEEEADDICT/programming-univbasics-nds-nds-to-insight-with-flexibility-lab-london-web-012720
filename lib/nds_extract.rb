@@ -45,6 +45,7 @@ i=0
         p arr
         i += 1
     end
+    puts arr
    return arr
 end
 # GOAL: For each Hash in an Array (movies_collection),
