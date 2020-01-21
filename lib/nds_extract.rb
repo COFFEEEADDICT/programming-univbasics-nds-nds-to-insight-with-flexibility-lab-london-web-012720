@@ -96,7 +96,8 @@ total = 0
 def movies_with_directors_set(source)
   row = 0
     arr = []
-    while source[row] do
+    
+    while row < source.size do
       name = source[row][:name]
       movies = source[row][:movies]
       arr << movies_with_director_key(name, movies)
